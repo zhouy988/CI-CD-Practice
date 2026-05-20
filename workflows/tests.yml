@@ -24,3 +24,4 @@ jobs:
       run: |
         export PYTHONPATH="${PYTHONPATH}:/Users/z/Desktop/design_assistant"
         python ../tests/test_design_assistant.py
+        PYTHONPATH=. python -m pytest
