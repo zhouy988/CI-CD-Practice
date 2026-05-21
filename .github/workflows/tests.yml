@@ -28,5 +28,4 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Run tests
         run: |
-          cd tests
-          python -m pytest ../test/tests.py
+          python -m pytest test/tests.py
