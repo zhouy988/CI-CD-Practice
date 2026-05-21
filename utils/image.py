@@ -48,7 +48,7 @@ class Image:
             raise ValueError("invalid image")
         laplacian_var = cv2.Laplacian(self.data, cv2.CV_64F).var()
         return laplacian_var >= threshold # lower laplacian variance means more blurry image
-    
+
     def normalize_image(self):
         self.data = cv2.normalize(self.data, None, alpha=0, beta=255, norm_type=cv2.NORM_MINMAX)
         return self.data
